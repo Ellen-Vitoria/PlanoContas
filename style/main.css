@@ -1,0 +1,60 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Menu: */
+
+header nav {
+    display: flex; /*Por padrão, os elementos ficam em linha, seguindo a propriedade flex-direction: row;*/
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(17, 78, 58)1%, rgba(46,203,151,1) 100%);
+    height: 8vh;
+}
+
+header .img-logo{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+header a{  
+    margin-left: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;  
+}
+
+
+header nav a:hover {
+    color: #fff;
+}
+
+header .navbar-btn {
+    margin-right: 15px;
+    font-size: 16px;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    padding: 6px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: color 0.3s ease-out,
+                background-color 0.3s ease-out,
+                border-color 0.3s ease-out;
+}
+header .navbar-btn:hover,
+header .navbar-btn:active {
+    background-color: rgba(17, 78, 58, 0.4);
+    border-color: #fff;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+}
