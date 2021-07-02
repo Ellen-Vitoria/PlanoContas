@@ -17,14 +17,33 @@
     <title>PlanoContas</title>
 </head>
 <body>
+    <!-- Menu de Navegação - Nav bar -->
     <header>
-        <!-- Menu de Navegação - Nav bar -->
         <nav>
             <a class="logo"href="#"><img class="img-logo" src="img/hand.png" alt="PlanoContas Logo"> | PlanoContas</a>
             <a class="navbar-btn" href="#">Entrar</a>
         </nav>
-
     </header>
-<script src="node_modules/jquery/dist/jquery.js"></script>   
+    <!-- Principal em 2 sections -->
+    <div id="container">
+        <section id="about">
+          <div class="text">
+            <p>Está com várias contas em mãos? Percebe que a todo momento é preciso se lembrar quais foram pagas ou não? Gostaria de uma solução?</p>
+            <p>A plataforma PlanoContas é essa <span>solução</span>!</p>
+            <p>Vantagens ao utilizar PlanoContas:</p>
+            <p><img class="img-check" src="img/checkmark.png" alt="Check"> Organização</p>
+            <p><img class="img-check" src="img/checkmark.png" alt="Check"> Otimização</p>
+          </div>
+          <a class="section1-btn" href="#">Entrar</a>
+        </section>
+
+        <section id="register">
+
+        </section>
+    </div>
+
+ 
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
