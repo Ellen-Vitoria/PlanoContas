@@ -58,3 +58,42 @@ header .navbar-btn:active {
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;
 }
+
+/*Principal 1º section*/
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#about {
+    background: linear-gradient(rgba(0, 24, 16, 0.9),rgba(0,0,0,.70)100%), url('/img/account.jpg') no-repeat;
+    background-size: cover;
+    position: fixed;
+    width:50%;
+    height: 92vh;
+}
+
+.text{
+    margin: 90px 50px 0px 50px;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text p{
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.text span{
+    font-size: 22px;
+    font-weight: bold;
+    color:rgb(44, 161, 122);
+}
+
+.section1-btn{
+    display: none;
+}
