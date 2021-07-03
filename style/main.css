@@ -12,6 +12,11 @@ header nav {
     align-items: center;
     background: linear-gradient(90deg, rgb(17, 78, 58)1%, rgba(46,203,151,1) 100%);
     height: 8vh;
+    border-bottom: rgba(0,0,0,0.1) solid 1px;
+    box-shadow: 0 4px 2em #000;
+    -webkit-box-shadow: 0 4px 2em #000;
+	-moz-box-shadow: 0 4px 2em #000;
+
 }
 
 header .img-logo{
@@ -63,6 +68,7 @@ header .navbar-btn:active {
 #container {
     display: flex;
     flex-direction: row;
+    justify-content: start;
 }
 
 #about {
@@ -96,4 +102,113 @@ header .navbar-btn:active {
 
 .section1-btn{
     display: none;
+}
+
+/*Principal 2º section*/
+#register {
+    background: linear-gradient(0deg, rgb(31,137,102) 0%, rgba(46,203,151,0.4) 100%);
+    width: 50%;
+    height: 92vh;
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    background: rgba(255, 247, 205, 0.9);
+    padding: 40px 70px;
+    box-shadow: 0 4px 1em rgba(0, 0, 0, 0.6);
+    border-radius: 6px;
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .group{
+    position: relative;
+    margin: 45px 15px;
+}
+
+input{
+    background: none;
+    color:rgba(0, 0, 0, 0.6);
+    padding: 3px 5px 10px 8px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+input:focus{
+    outline: none; /*Sem borda ao clicar para escrever*/
+    color: #000;
+}
+
+label{
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -16px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(16, 116, 82);
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: rgb(31,137,102);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+.form button{
+    background: rgb(44, 194, 144);
+    border: none;
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    color: #000;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 2px;
+    transition: color 0.3s ease-out,
+                background-color 0.3s ease-out,
+                border-color 0.3s ease-out;
+}
+
+.form button:hover,
+.form button:active {
+    background-color: rgb(33, 148, 110);
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
 }
