@@ -38,7 +38,27 @@
         </section>
 
         <section id="register">
+          <form action="" method="POST" id="form">
+            <div class="form">
+              <h4>Cadastre-se ao PlanoContas</h4>
+              <div class="group">
+                <input type="text" name="" id="name" required><span class="barra"></span>
+                <label for="">Nome</label>
+              </div>
 
+              <div class="group">
+                <input type="email" name="" id="name" required><span class="barra"></span>
+                <label for="">Email</label>
+              </div>
+
+              <div class="group">
+                <input type="password" name="" id="name" required><span class="barra"></span>
+                <label for="">Senha</label>
+              </div>
+
+              <button type="submit">Registrar-se</button>
+            </div>
+          </form>
         </section>
     </div>
 
