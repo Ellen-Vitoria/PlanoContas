@@ -81,6 +81,39 @@
 
  
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  
+  <script>
+    $("#btnregister").click(function (e) {
+      e.preventDefault();
+      var name = $("#nameid").val();
+      var email = $("#emailid").val();
+      var password = $("#passwordid").val();
+
+      $.ajax({
+        url: "insert.php",
+        method: "POST",
+        data: {
+          name:name,
+          email:email,
+          password:password
+        },
+        success: function(data){
+          fetch();
+          $("#alert").html(data);  
+        }
+      });
+      $("#form")[0].reset();
+    });
+
+    function fetch() {
+      $.ajax({
+        url: "fetch.php",
+        method: "POST",
+        success: function(data){
+          $("#data-table").html(data);
+        }
+      });
+    }
+    fetch();
+  </script>
 </body>
 </html>
