@@ -1,0 +1,27 @@
+{
+  "name": "planocontas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "@popperjs/core": "^2.9.2"
+  },
+  "scripts": {
+    "start": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ellen-Vitoria/PlanoContas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ellen-Vitoria/PlanoContas/issues"
+  },
+  "homepage": "https://github.com/Ellen-Vitoria/PlanoContas#readme"
+}
