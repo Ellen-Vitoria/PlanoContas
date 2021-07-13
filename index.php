@@ -10,10 +10,14 @@
     <link rel="icon" href="img/hand.png" type="image/x-icon">
     <link rel="stylesheet" href="style/main.css"> 
 
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="style/responsive.css">
+
     <!-- Bootstrap CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <title>PlanoContas</title>
 </head>
 <body>
