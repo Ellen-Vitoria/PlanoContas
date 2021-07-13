@@ -34,36 +34,53 @@
             <p><img class="img-check" src="img/checkmark.png" alt="Check"> Organização</p>
             <p><img class="img-check" src="img/checkmark.png" alt="Check"> Otimização</p>
           </div>
-          <a class="section1-btn" href="#">Entrar</a>
         </section>
 
         <section id="register">
           <form action="" method="POST" id="form">
             <div class="form">
               <h4>Cadastre-se ao PlanoContas</h4>
+              <div id="alert"></div>
               <div class="group">
-                <input type="text" name="" id="name" required><span class="barra"></span>
-                <label for="">Nome</label>
+                <input type="text" name="" id="nameid" required><span class="barra"></span>
+                <label for="nameid">Nome</label>
               </div>
 
               <div class="group">
-                <input type="email" name="" id="name" required><span class="barra"></span>
-                <label for="">Email</label>
+                <input type="email" name="" id="emailid" required><span class="barra"></span>
+                <label for="emailid">Email</label>
               </div>
 
               <div class="group">
-                <input type="password" name="" id="name" required><span class="barra"></span>
-                <label for="">Senha</label>
+                <input type="password" name="" id="passwordid" required><span class="barra"></span>
+                <label for="passwordid">Senha</label>
               </div>
 
-              <button type="submit">Registrar-se</button>
+              <button type="submit" id="btnregister">Registrar-se</button>
             </div>
           </form>
         </section>
     </div>
+    
+    <!-- Principal fetch -->
+    <div id="container-fetch">
+      <div id="fetch">
+        <!-- Tabela com bootstrap -->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nome</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="data-table"></tbody>
+        </table>
+      </div>
+    </div>
 
  
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+  
 </body>
 </html>
